@@ -13,7 +13,7 @@ const RootNavigation: React.FunctionComponent = () => {
 
     return(
         <NavigationContainer>
-            <Stack.Navigator  initialRouteName='AuthorizationCode' screenOptions={{title: 'Pafer', headerTitleStyle: { color: '#1a3ac4' }, headerTitleAlign: 'center'}}>
+            <Stack.Navigator  initialRouteName='Login' screenOptions={{title: 'Pafer', headerTitleStyle: { color: '#1a3ac4' }, headerTitleAlign: 'center'}}>
                 <Stack.Screen name="Login" component={Login} options={{headerShown: false}} />
                 <Stack.Screen name="EmailLogin" component={EmailLogin}/>
                 <Stack.Screen name="EmailRegister" component={EmailRegister}/>

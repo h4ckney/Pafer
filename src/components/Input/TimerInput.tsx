@@ -31,8 +31,8 @@ const TimerInput: React.FunctionComponent<Props> = ({placeholderText, text, onCh
 
     return(
         <View>
-            <TextInput style={{width: wp(84), height: hp(9), backgroundColor: '#f8f8fb', marginBottom: hp(2), borderRadius: 8, padding: wp(4)}} placeholder={placeholderText} />
-            <Text>{minutes}:{seconds < 10 ? `0${seconds}` : seconds}</Text>
+            <TextInput style={{width: wp(84), height: hp(6), backgroundColor: '#f8f8fb', marginBottom: hp(2), borderRadius: 8, padding: wp(4)}} placeholder={placeholderText} />
+            {/*<Text>{minutes}:{seconds < 10 ? `0${seconds}` : seconds}</Text>*/}
         </View>
     )
 }

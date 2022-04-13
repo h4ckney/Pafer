@@ -11,7 +11,7 @@ interface Props {
 const NormalInput: React.FunctionComponent<Props> = ({placeholderText, text, onChange}) => {
 
     return(
-        <TextInput style={{width: wp(84), height: hp(9), backgroundColor: '#f8f8fb', marginBottom: hp(2), borderRadius: 8, padding: wp(4)}} placeholder={placeholderText}/>
+        <TextInput style={{width: wp(84), height: hp(6), backgroundColor: '#f8f8fb', marginBottom: hp(2), borderRadius: 12, padding: wp(4)}} placeholder={placeholderText}/>
     )
 }
 
