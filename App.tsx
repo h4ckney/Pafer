@@ -12,12 +12,20 @@ import React from 'react';
 
 
 import RootNavigation from "./src/navigation/RootNavigation";
+import TabNavigation from "./src/navigation/TabNavigation";
+import {NavigationContainer} from "@react-navigation/native";
 
 const App = () => {
 
   return (
       <React.Fragment>
-          <RootNavigation/>
+          <NavigationContainer>
+              {true ?
+                  <TabNavigation/>
+                  :
+                  <RootNavigation/>
+              }
+          </NavigationContainer>
       </React.Fragment>
   );
 };

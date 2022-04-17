@@ -16,11 +16,19 @@ const LoginBox: React.FunctionComponent<Props> = ({BGColor,TextColor, onPress, I
 
     return(
         <TouchBox onPress={onPress} BGColor={BGColor}>
-            <Image source={Img ?? {uri: ''}} style={{width: 21, height: 21, }} />
+            <EmailImg source={Img ?? {uri: ''}} />
             <Text style={{color: TextColor, fontSize: 18, fontFamily: 'NotoSansKR-Bold'}}>{text}</Text>
         </TouchBox>
     )
 }
+
+const EmailImg = Styled.Image`
+    position: absolute;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    margin: 0 50px 0 20px;
+`
 
 const TouchBox = Styled.TouchableOpacity<{BGColor?: string}>`
     backgroundColor: ${(props)=> props.BGColor ? props.BGColor : '#fff'};
@@ -29,9 +37,9 @@ const TouchBox = Styled.TouchableOpacity<{BGColor?: string}>`
     margin-bottom: ${hp(2)};
     display: flex;
     flex-direction: row;
-    justify-content: center; 
     align-items: center;
     border-radius: 12;
+    justify-content:center;
 `
 
 export default LoginBox

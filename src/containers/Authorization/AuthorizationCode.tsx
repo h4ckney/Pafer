@@ -6,6 +6,7 @@ import TransColorBox from "../../components/Box/TransColorBox";
 import LoginBox from "../../components/Box/LoginBox";
 import {RegisterStepText, RegisterText} from "../../assets/style/StyledComponents"
 import TimerInput from "../../components/Input/TimerInput";
+import blue_icon from "../../assets/img/blue_icon.png"
 
 const AuthorizationCode: React.FunctionComponent = () => {
     return(
@@ -17,7 +18,7 @@ const AuthorizationCode: React.FunctionComponent = () => {
             <View style={{ alignItems: "center"}}>
                 <TimerInput placeholderText={'인증번호'}/>
                 <TransColorBox text={'확인'}/>
-                <LoginBox text={"이메일 재전송"} BGColor={"#f6f6ff"} TextColor={'#1a3ac4'}/>
+                <LoginBox text={"이메일 재전송"} BGColor={"#f6f6ff"} TextColor={'#1a3ac4'} Img={blue_icon}/>
             </View>
         </View>
     )
