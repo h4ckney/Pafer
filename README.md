@@ -8,9 +8,8 @@
 TypeScript, Styled-component
 ```
 
-## Design (일부)
+## Design (앱 화면)
 <img src="https://user-images.githubusercontent.com/46347578/168472387-21340b29-c278-4248-a870-459e155154d4.png" width="375" alt="select-auth">
-<img src="https://user-images.githubusercontent.com/46347578/168472250-90365b22-a4ae-4adf-a661-7464c42cfef9.png" width="375" alt="home">
 
 ## 추가 예정
 - 카드 번호를 저장하고 카드 종류, 카드사를 지정할 수 있습니다.
